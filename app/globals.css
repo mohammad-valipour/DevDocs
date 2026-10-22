@@ -1,1 +1,120 @@
 @import "tailwindcss";
+
+:root {
+    /* ---------- Layout ---------- */
+
+    --background: var(--color-background);
+    --foreground: var(--color-foreground);
+
+    --surface: var(--color-surface);
+    --surface-secondary: var(--color-surface-secondary);
+    --surface-elevated: var(--color-surface-elevated);
+
+    /* ---------- Brand ---------- */
+
+    --primary: var(--color-primary);
+    --primary-foreground: var(--color-primary-foreground);
+    --primary-hover: var(--color-primary-hover);
+
+    --secondary: var(--color-secondary);
+    --secondary-foreground: var(--color-secondary-foreground);
+    --secondary-hover: var(--color-secondary-hover);
+
+    /* ---------- Text ---------- */
+
+    --muted: var(--color-muted);
+    --muted-foreground: var(--color-muted-foreground);
+
+    /* ---------- Status ---------- */
+
+    --success: var(--color-success);
+    --success-foreground: var(--color-success-foreground);
+
+    --warning: var(--color-warning);
+    --warning-foreground: var(--color-warning-foreground);
+
+    --info: var(--color-info);
+    --info-foreground: var(--color-info-foreground);
+
+    /* ---------- Forms ---------- */
+
+    --input: var(--color-input);
+    --placeholder: var(--color-placeholder);
+
+    --outline: var(--color-outline);
+
+    --border: var(--color-border);
+    --border-hover: var(--color-border-hover);
+    --border-active: var(--color-border-active);
+
+    --divider: var(--color-divider);
+}
+
+@theme {
+    /* ==========================================================
+       Brand
+    ========================================================== */
+    --color-primary: #10B981;
+    --color-primary-foreground: #FFFFFF;
+    --color-primary-hover: #059669;
+
+    /* ==========================================================
+       Secondary
+    ========================================================== */
+    --color-secondary: #D1FAE5;
+    --color-secondary-foreground: #065F46;
+    --color-secondary-hover: #A7F3D0;
+
+    /* ==========================================================
+       Background
+    ========================================================== */
+    --color-background: #F8FAFC;
+    --color-foreground: #0F172A;
+
+    /* ==========================================================
+       Surface
+    ========================================================== */
+    --color-surface: #FFFFFF;
+    --color-surface-secondary: #F1F5F9;
+    --color-surface-elevated: #FFFFFF;
+
+    /* ==========================================================
+       Muted
+    ========================================================== */
+    --color-muted: #ECFDF5;
+    --color-muted-foreground: #64748B;
+
+    /* ==========================================================
+       Border
+    ========================================================== */
+    --color-border: #E2E8F0;
+    --color-border-hover: #CBD5E1;
+    --color-border-active: #10B981;
+
+    /* ==========================================================
+       Forms
+    ========================================================== */
+    --color-input: #FFFFFF;
+    --color-placeholder: #94A3B8;
+    --color-outline: #10B981;
+    --color-divider: #E2E8F0;
+
+    /* ==========================================================
+       Status
+    ========================================================== */
+    --color-success: #10B981;
+    --color-success-foreground: #FFFFFF;
+    --color-warning: #FBBF24;
+    --color-warning-foreground: #FFFFFF;
+    --color-info: #34D399;
+    --color-info-foreground: #FFFFFF;
+    --color-danger: #EF4444;
+    --color-danger-foreground: #FFFFFF;
+    --color-accent: #059669;
+    --color-accent-foreground: #FFFFFF;
+
+    /* ==========================================================
+       Typography
+    ========================================================== */
+    --font-sans: "Vazirmatn", sans-serif;
+}
