@@ -1,7 +1,7 @@
 import {HEADER} from "@/constants/header.constants";
 import {Text} from "@/components/ui";
-import NavItems from "@/components/layout/header/navItems";
-import ActionItems from "@/components/layout/header/actionItems";
+import NavItems from "@/components/layout/website/header/navItems";
+import ActionItems from "@/components/layout/website/header/actionItems";
 import {Suspense} from "react";
 
 export default function Header() {

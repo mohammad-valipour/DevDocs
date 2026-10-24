@@ -1,7 +1,6 @@
 import "./globals.css";
 import type {Metadata} from "next";
 import {Vazirmatn} from "next/font/google";
-import Header from "@/components/layout/header/header";
 
 const vazirmatn = Vazirmatn({
     subsets: ["arabic"],
@@ -18,11 +17,7 @@ export default function RootLayout({children}: LayoutProps<"/">) {
     return (
         <html lang="fa" dir="rtl">
         <body className={`${vazirmatn.variable} font-sans bg-background`} cz-shortcut-listen="true">
-
-        <Header/>
-
         {children}
-
         </body>
         </html>
     );
