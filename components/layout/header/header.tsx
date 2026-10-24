@@ -2,6 +2,7 @@ import {HEADER} from "@/constants/header.constants";
 import {Text} from "@/components/ui";
 import NavItems from "@/components/layout/header/navItems";
 import ActionItems from "@/components/layout/header/actionItems";
+import {Suspense} from "react";
 
 export default function Header() {
     const {logo, navItems, actionItems} = HEADER;
@@ -23,7 +24,9 @@ export default function Header() {
                 <NavItems navbarItems={navItems}/>
 
                 {/*    Action Items     */}
-                <ActionItems actionItems={actionItems}/>
+                <Suspense fallback={<div className="h-10" />}>
+                    <ActionItems actionItems={actionItems}/>
+                </Suspense>
             </div>
         </header>
     );
