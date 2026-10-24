@@ -9,8 +9,6 @@ import {cookies} from "next/headers";
 import {z} from "zod";
 
 export async function register(state, formData: FormData) {
-    console.log([...formData.entries()]);
-
     const name = formData.get("name");
     const email = formData.get("email");
     const password = formData.get("password");
@@ -65,6 +63,9 @@ export async function register(state, formData: FormData) {
 
     try {
         const hashedPassword = await bcrypt.hash(validPassword, 12);
+        const userCount = await User.countDocuments();
+
+        const role: "admin" | "user" = userCount === 0 ? "admin" : "user";
 
         const user = await User.create({
             name: validName,
